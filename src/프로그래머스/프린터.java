@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Solution4 {
+public class 프린터 {
     public static int solution(int[] priorities, int location) {
 
         int answer =1;

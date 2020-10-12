@@ -2,7 +2,7 @@ package 프로그래머스;
 
 import java.util.Arrays;
 
-public class Solution5 {
+public class 완주하지못한선수 {
     public String solution(String[] participant, String[] completion) {
         Arrays.sort(participant);
         Arrays.sort(completion);

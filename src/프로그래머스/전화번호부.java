@@ -3,7 +3,7 @@ package 프로그래머스;
 import java.util.Arrays;
 
 //전화번호부
-public class Solution6 {
+public class 전화번호부 {
     public boolean solution(String[] phone_book) {
         Arrays.sort(phone_book);
 

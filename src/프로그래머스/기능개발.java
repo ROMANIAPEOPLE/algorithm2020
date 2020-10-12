@@ -3,7 +3,7 @@ package 프로그래머스;
 import java.util.*;
 import java.util.stream.Collectors;
 //기능개발
-public class Solution1 {
+public class 기능개발 {
     public static int[] solution(int[] progresses, int[] speeds) {
 
         //1. 기능개발이 완료되는데 걸리는 기간을 구한다.
