@@ -7,25 +7,11 @@ import java.util.Collections;
 public class 연습장 {
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<>();
+        int[][] board = {{3, 5, 6},
+                {9, 2, 7},
+                {4, 1, 8}};
 
-        for(int i=0; i<4; i++){
-            list.add(1);
-        }
-
-        list.add(2,111);
-
-        list.remove(3);
-
-
-        for (Integer integer : list) {
-            System.out.println(integer);
-        }
-
-
-
-
-
+        System.out.println(board[2][1]);
 
 
     }
