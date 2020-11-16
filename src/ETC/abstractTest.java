@@ -2,18 +2,25 @@ package ETC;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public  class abstractTest {
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
-        list.add("A");
-        list.add("B");
-        list.add("C");
-        String [] s = new String[10];
-        String [] str = list.toArray(s);
-        for(String temp : str){
-            System.out.println(temp);
+
+        Map<String, Integer> map = new HashMap<>();
+
+
+        map.put("A",1);
+        map.put("B",2);
+        map.put("C",3);
+        map.put("D",4);
+
+
+        for (int i : map.values()) {
+            System.out.println(i);
         }
+
     }
 
 }

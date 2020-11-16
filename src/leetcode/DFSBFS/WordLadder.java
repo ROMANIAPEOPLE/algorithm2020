@@ -34,10 +34,8 @@ public class WordLadder {
                 if (str.equals(endWord))
                     return level;
                 for (String neighbor : neighbors(str, wordList)) {
-                    System.out.println(neighbor + i + " " + level + "size: " + size );
                     queue.offer(neighbor);
                 }
-                System.out.println("------------------");
             }
             level++;
         }
