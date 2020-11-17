@@ -1,25 +1,18 @@
 package ETC;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class 연습장  {
 
     public static void main(String[] args) {
 
-        String str = "(a)())()";
+        Scanner sc = new Scanner(System.in);
 
-        for(int i=0; i<str.length(); i++){
-            String newStr = str.substring(0,i) +str.substring(i+1);
-            System.out.println(newStr);
+        String s = sc.nextLine();
 
+        s=s.replace(" ", "");
 
-        }
-
-        System.out.println(str.substring(0,1));
-
+        System.out.println(s);
 
     }
 }
