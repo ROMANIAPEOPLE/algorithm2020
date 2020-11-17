@@ -3,11 +3,11 @@ package leetcode.DFSBFS;
 public class 단어찾기DFS {
     public static void main(String[] args) {
         char[][] grid = {
-                {'A', 'B', 'C', 'C'},
-                {'S', 'F', 'C', 'S'},
-                {'S', 'D', 'E', 'E'}
+                {'C', 'A', 'A'},
+                {'A', 'A', 'A'},
+                {'B', 'C', 'D'}
         };
-        String word = "ABCCE";
+        String word = "AAB";
         단어찾기DFS a = new 단어찾기DFS();
         System.out.println(a.solve(grid, word));
     }
@@ -40,16 +40,19 @@ public class 단어찾기DFS {
         if(visited[x][y]) {
             return false;
         }
+        visited[x][y] = true;
 
         for(int i=0; i<4; i++){
             int cx = x+dx[i];
             int cy = y+dy[i];
 
             if(dfs(grid, visited, word, start+1, cx, cy)) {
+                System.out.println("몇회");
                 return true;
             }
         }
-        System.out.println(grid[x][y]);
+        System.out.println("실패는?");
+        visited[x][y]=false;
         return false;
 
 
