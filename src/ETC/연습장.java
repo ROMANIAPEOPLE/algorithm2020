@@ -6,13 +6,10 @@ public class 연습장  {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+     char [] temp ={'h','i','t'};
 
-        String s = sc.nextLine();
+     String str = new String(temp);
 
-        s=s.replace(" ", "");
-
-        System.out.println(s);
-
+        System.out.println(str);
     }
 }

@@ -16,7 +16,6 @@ public class 단어사다리 {
         }
 
         Queue<String> queue = new LinkedList<>();
-        Set<String> set = new HashSet<>(wordList);
 
         queue.offer(begin);
 

@@ -21,10 +21,7 @@ public class WordLadder {
             return 0;
 
         Queue<String> queue = new LinkedList<>();
-        Set<String> dict = new HashSet<>(wordList);
         queue.offer(beginWord);
-        dict.add(endWord);
-        dict.remove(beginWord);
         int level = 1;
 
         while (!queue.isEmpty()) {

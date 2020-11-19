@@ -7,7 +7,7 @@ public class WordSearch {
                 {'S','F','C','S'},
                 {'S','D','E','E'}
         };
-        String word ="ABCED";
+        String word ="ABCES";
         WordSearch a = new WordSearch();
         System.out.println(a.solve(grid, word));
     }
