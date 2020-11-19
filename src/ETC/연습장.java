@@ -6,10 +6,13 @@ public class 연습장  {
 
     public static void main(String[] args) {
 
-     char [] temp ={'h','i','t'};
 
-     String str = new String(temp);
+        String [] arr = {"a"};
 
-        System.out.println(str);
+        int value = (int)arr[0].charAt(0)-96;
+
+        System.out.println(value);
+
+
     }
 }
