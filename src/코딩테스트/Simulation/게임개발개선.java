@@ -45,6 +45,7 @@ public class 게임개발개선 {
         while (true) {
             // 왼쪽으로 회전
             turn_left();
+            System.out.println(direction);
             int nx = x + dx[direction];
             int ny = y + dy[direction];
             // 회전한 이후 정면에 가보지 않은 칸이 존재하는 경우 이동

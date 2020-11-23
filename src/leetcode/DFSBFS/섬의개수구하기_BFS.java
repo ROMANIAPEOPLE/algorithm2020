@@ -25,6 +25,7 @@ public class 섬의개수구하기_BFS {
                    count = BFS(i,j,count);
                    max = Math.max(max,count);
                    count =0;
+                    System.out.println("D");
                 }
             }
         }
