@@ -3,6 +3,7 @@ package 탐색;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//이진탐색 사용하기
 public class 부품찾기 {
     public static void main(String[] args) {
         /**
