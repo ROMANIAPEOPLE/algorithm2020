@@ -1,4 +1,4 @@
-package 탐색;
+package 탐색.기초;
 
 import java.util.Arrays;
 import java.util.Scanner;
