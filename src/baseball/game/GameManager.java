@@ -13,6 +13,7 @@ public class GameManager {
     private final Numbers computer;
     private final Numbers user;
     private boolean gameClear;
+    private Condition condition;
 
     public GameManager(Numbers computer, Numbers user) {
         this.computer = computer;
@@ -26,7 +27,7 @@ public class GameManager {
 
         System.out.println("스트라이크 : " + strike + " 볼 : " + ball);
 
-        if(strike == Condition.DEPTH) {
+        if(strike == condition.DEPTH) {
             gameClear=true;
             System.out.println("정답입니다 !! 게임종료");
         }
