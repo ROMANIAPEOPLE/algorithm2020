@@ -10,30 +10,13 @@ import java.util.stream.Collectors;
 public class 연습장 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String [] arr = sc.next().split("");
-        int n = sc.nextInt();
-        String dir = sc.next();
+        String str = sc.nextLine();
 
 
-        //2 3 4 4 5
-        //2 3 4 5 1
+        int col = str.charAt(1)-'0';
+        int row = str.charAt(0)-'a'+1;
 
-        String temp = arr[0];
-        for(int i=1; i<arr.length; i++){
-            arr[i-1] = arr[i];
-        }
-        arr[arr.length-1] = temp;
-
-
-//        String temp = arr[arr.length-1];
-//        for(int i=arr.length-2; i>=0; i--) {
-//            arr[i+1] = arr[i];
-//        }
-//        arr[0] = temp;
-
-
-
-        System.out.println(Arrays.toString(arr));
+        System.out.println(col + " " + row);
 
     }
 }

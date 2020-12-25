@@ -32,8 +32,8 @@ public class 상하좌우ver2 {
                 continue;
             }
 
-            x +=cx;
-            y +=cy;
+           x= cx;
+            y =cy;
 
 
         }

@@ -1,6 +1,4 @@
 package 코딩테스트.Simulation;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 //15분 , 난이도 하

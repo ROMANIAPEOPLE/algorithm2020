@@ -16,7 +16,7 @@ public class 곱혹플 {
         for(int i=1; i<str.length(); i++){
             int nextNum = str.charAt(i)-'0';
 
-            if(num == 0 || num == 1 || nextNum == 0 || nextNum == 0) {
+            if(num == 0 || num == 1 || nextNum == 0 || nextNum == 1) {
                 num+=nextNum;
             }else {
                 num*=nextNum;
