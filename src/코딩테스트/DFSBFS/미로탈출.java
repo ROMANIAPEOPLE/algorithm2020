@@ -36,8 +36,7 @@ public class 미로탈출 {
         int count=1;
         while(!queue.isEmpty()){
             int [] point =queue.poll();
-//            int cx = point[0];
-//            int cy = point[1];
+
 
             for(int i=0; i<4; i++){
                int cx= point[0]+dx[i];
