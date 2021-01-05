@@ -1,8 +1,6 @@
-package 탐색.기초;
+package 코딩테스트.탐색;
 
 import java.util.*;
-
-import static java.util.stream.Collectors.toList;
 
 public class 부품찾기ver3 {
     public static void main(String[] args) {

@@ -43,8 +43,10 @@ public class 게임개발개선 {
         int cnt = 1;
         int turn_time = 0;
         while (true) {
+
             // 왼쪽으로 회전
             turn_left();
+
             System.out.println(direction);
             int nx = x + dx[direction];
             int ny = y + dy[direction];

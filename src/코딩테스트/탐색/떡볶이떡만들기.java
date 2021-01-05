@@ -1,4 +1,4 @@
-package 탐색.기초;
+package 코딩테스트.탐색;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -34,11 +34,12 @@ public class 떡볶이떡만들기 {
     public static boolean getH(int mid, int [] arr,int m) {
 
         int sum=0;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]-mid >=0)
-                sum+= arr[i] - mid;
+        for(int i=0; i<arr.length; i++) {
+            if (arr[i] - mid >= 0) {
+                sum += arr[i] - mid;
+                System.out.println(sum);
+            }
         }
-
         if(sum >= m) {
             return true;
         }

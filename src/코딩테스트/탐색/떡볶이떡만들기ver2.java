@@ -1,4 +1,4 @@
-package 탐색.기초;
+package 코딩테스트.탐색;
 
 import java.util.Scanner;
 

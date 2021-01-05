@@ -1,4 +1,4 @@
-package 탐색.기초;
+package 코딩테스트.탐색;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -25,7 +25,6 @@ public class 부품찾기 {
          * 솔루션
          */
         Arrays.sort(partAll);
-        boolean ck = true;
         for(int i=0; i<M; i++) {
 
             if(!search(partAll,part[i],0,partAll.length-1)){
