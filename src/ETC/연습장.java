@@ -1,22 +1,41 @@
 package ETC;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Collectors;
+import java.util.PriorityQueue;
+
+class Food implements Comparable<Food> {
+
+  int time;
+  int index;
+
+  public Food(int time, int index) {
+    this.time = time;
+    this.index = index;
+  }
+  public int getTime(){
+      return time;
+  }
+  public int getIndex() {
+      return index;
+  }
+
+    @Override
+    public int compareTo(Food f) {
+        return this.time-f.time;
+    }
+}
 
 public class 연습장 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
 
+  public static void main(String[] args) {
 
-        int col = str.charAt(1)-'0';
-        int row = str.charAt(0)-'a'+1;
+    PriorityQueue<Food> queue = new PriorityQueue<>();
 
-        System.out.println(col + " " + row);
+    queue.offer(new Food(1, 3));
+    queue.offer(new Food(3, 2));
+    queue.offer(new Food(2, 5));
 
-    }
+    System.out.println(queue.poll().time);
+
+  }
 }
