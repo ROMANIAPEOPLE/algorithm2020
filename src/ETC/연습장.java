@@ -3,7 +3,7 @@ package ETC;
 
 import java.util.PriorityQueue;
 
-class Food implements Comparable<Food> {
+class Food {
 
   int time;
   int index;
@@ -19,10 +19,7 @@ class Food implements Comparable<Food> {
       return index;
   }
 
-    @Override
-    public int compareTo(Food f) {
-        return this.time-f.time;
-    }
+
 }
 
 public class 연습장 {
@@ -34,8 +31,6 @@ public class 연습장 {
     queue.offer(new Food(1, 3));
     queue.offer(new Food(3, 2));
     queue.offer(new Food(2, 5));
-
-    System.out.println(queue.poll().time);
 
   }
 }
