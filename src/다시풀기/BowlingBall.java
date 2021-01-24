@@ -13,6 +13,7 @@ public class BowlingBall {
             weight[sc.nextInt()]++;
         }
 
+        System.out.println("볼링공의 개수는?");
         int res  = 0;
 
         for(int i=1; i<=M; i++){
