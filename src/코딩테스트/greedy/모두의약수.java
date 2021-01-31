@@ -13,6 +13,7 @@ public class 모두의약수 {
             }
         }
 
+
         for(int i=1; i<arr.length; i++) {
             System.out.print(arr[i]+ " ");
         }
