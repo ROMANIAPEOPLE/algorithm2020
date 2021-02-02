@@ -1,51 +1,61 @@
 package 프로그래머스;
 
-import java.util.ArrayList;
-import java.util.List;
 
-/**
- * numbers 의 길이 까지 모든 숫자 순열로 다 뽑고, 하나하나 소수인지 검사한다음에 총 몇개가 소수인지 리턴
- */
+import java.util.*;
 
 public class 소수찾기 {
+
+
+    private static char[] arr;
+    private static boolean[] visited;
+    private Set<Integer> set;
+
     public int solution(String numbers) {
-        int answer = 0;
 
-        int primeCount = 0;
-        String[] arr = numbers.split("");
+        set = new HashSet<>();
 
-        for (int i = 1; i <= numbers.length(); i++) {
-            String[] output = new String[i];
-            boolean[] visited = new boolean[numbers.length()];
-            List<String> list = new ArrayList<>();
-            // depth = 0;
-            // 몇자리수를 뽑을껀지 ? = i
-            // 총 몇자리인지는 number.length
-            list = perm(arr, output, visited, 0, arr.length, i, list);
+        int size = numbers.length();
+        for(int i=1; i<=size; i++){
+            arr = new char[i];
+            visited = new boolean[size];
+            perm(0,i,size,numbers);
         }
+        return set.size();
 
-
-        return answer;
     }
 
-    private List<String> perm(String[] arr, String[] output, boolean[] visited, int depth, int size, int r, List<String> list) {
-        if (depth == r) {
-            for(String s : output) {
-                list.add(s);
-            }
-            return list;
-        }
+    private void perm(int depth, int r, int size, String numbers) {
 
-        for (int i = 0; i < size; i++) {
-            if (!visited[i]) {
+
+        if(depth == r){
+            if(arr[0] == '0') return;
+
+            int num = Integer.parseInt(String.valueOf(arr));
+
+            if(isPrimeNumber(num)) {
+                set.add(num);
+            }
+
+            return;
+        }
+        for(int i=0; i<size; i++){
+            if(!visited[i]) {
                 visited[i] = true;
-                output[i] = arr[i];
-                perm(arr, output, visited, depth + 1, size, r, list);
+                arr[depth] = numbers.charAt(i);
+                perm(depth+1,r, size, numbers);
                 visited[i] = false;
             }
         }
 
     }
 
+    private boolean isPrimeNumber(int num) {
+        if(num == 1 ) return false;
+        for(int i=2; i<=Math.sqrt(num); i++){
+            if(num % i == 0) return false;
+        }
+        return true;
+
+    }
 
 }
