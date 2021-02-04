@@ -2,6 +2,7 @@ package ETC;
 
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class 연습장 {
 
@@ -9,8 +10,10 @@ public class 연습장 {
 
     String [] str = {"K","1","K","A","5","C","B","7"};
     System.out.println(Arrays.toString(str));
-    Arrays.sort(str);
+    Arrays.sort(str, Comparator.reverseOrder());
     System.out.println(Arrays.toString(str));
+
+
 
 
 
