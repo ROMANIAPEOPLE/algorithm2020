@@ -34,9 +34,6 @@ public class 문자열압축 {
 
             comp += (count == 1) ? unit : unit+count;
             ans = Math.min(ans, comp.length());
-
-
-
         }
 
         return ans;
