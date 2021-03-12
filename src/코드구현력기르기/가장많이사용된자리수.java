@@ -24,7 +24,7 @@ public class 가장많이사용된자리수 {
         int max = -1;
         int maxValue = -1;
         for (int i = 0; i < count.length; i++) {
-            if (max < count[i]) {
+            if (max <= count[i]) {
                 max = count[i];
                 maxValue = i;
             }
