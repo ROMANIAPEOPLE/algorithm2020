@@ -8,13 +8,11 @@ public class 연습장 {
 
     public static void main(String[] args) {
 
-        String s = "23";
-
-        StringBuilder builder = new StringBuilder(s);
-
-        int n = Integer.parseInt(String.valueOf(builder.reverse()));
-
-        System.out.println(n);
+        int sum = 0;
+        for(int i=0; i<10; i++){
+            sum+=i;
+        }
+        System.out.println(sum);
 
 
 

@@ -9,49 +9,42 @@ public class 아나그램 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String[] str1 = sc.nextLine().split("");
-        String[] str2 = sc.nextLine().split("");
-        Arrays.sort(str1);
-        Arrays.sort(str2);
+        char[] arr1 = sc.nextLine().toCharArray();
+        char[] arr2 = sc.nextLine().toCharArray();
 
-        if(str1.length != str2.length) {
+        int[] res1 = new int[123];
+        int[] res2 = new int[123];
+
+        int length = arr1.length;
+
+        for (int i = 0; i < length; i++) {
+            if (arr1[i] >= 65 || arr1[i] <= 90) {
+                res1[arr1[i] - 64]++;
+            } else {
+                res1[arr1[i] - 70]++;
+            }
+        }
+
+        for (int i = 0; i < length; i++) {
+            if (arr2[i]  >= 65 || arr2[i] <= 90) {
+                res2[arr2[i] - 64]++;
+            } else {
+                res2[arr2[i] - 70]++;
+            }
+        }
+
+        boolean check = true;
+        for (int i = 0; i < res1.length; i++) {
+            if (res1[i] != res2[i]) {
+                check = false;
+            }
+        }
+
+        if (check) {
+            System.out.println("YES");
+        } else {
             System.out.println("NO");
-            return;
         }
-        Map<String, Integer> map = new HashMap<>();
-        Map<String, Integer> map2 = new HashMap<>();
-
-
-        int length = str1.length;
-        for (int i = 0; i < length; i++) {
-            if (map.get(str1[i]) == null) {
-                map.put(str1[i], 1);
-            } else {
-                map.put(str1[i], (map.get(str1[i]) + 1));
-            }
-        }
-
-        for (int i = 0; i < length; i++) {
-            if (map2.get(str2[i]) == null) {
-                map2.put(str2[i], 1);
-            } else {
-                map2.put(str2[i], (map2.get(str2[i]) + 1));
-            }
-        }
-
-
-        for(int i=0; i<length; i++){
-            if(map.get(str1[i]) != map2.get(str2[i])) {
-                System.out.println("NO");
-                return;
-            }
-        }
-
-
-        System.out.println("YES");
-
-
-
 
     }
 }
