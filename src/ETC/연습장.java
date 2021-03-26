@@ -8,10 +8,17 @@ public class 연습장 {
 
     public static void main(String[] args) {
 
-        char  i = 'A';
+        String s = "abcd";
 
-        System.out.println(i++);
-        System.out.println(i++);
+        for(int i=0; i<s.length(); i++) {
+            for(int j=i; j<=s.length(); j++){
+                if(i==j) continue;
+                System.out.println(s.substring(i,j) + " / "+ i + " , " + j);
+            }
+        }
+
+//        System.out.println(s.substring(0,4));
+
 
 
 
