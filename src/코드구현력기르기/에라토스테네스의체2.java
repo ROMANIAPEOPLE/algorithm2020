@@ -23,8 +23,5 @@ public class 에라토스테네스의체2 {
                 System.out.println(i);
             }
         }
-
-
-
     }
 }
