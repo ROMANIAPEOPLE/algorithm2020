@@ -8,17 +8,13 @@ public class 연습장 {
 
     public static void main(String[] args) {
 
-        String s = "abcd";
+        StringBuilder builder = new StringBuilder();
+        builder.append(1);
+        builder.append(2);
 
-        for(int i=0; i<s.length(); i++) {
-            for(int j=i; j<=s.length(); j++){
-                if(i==j) continue;
-                System.out.println(s.substring(i,j) + " / "+ i + " , " + j);
-            }
-        }
+        builder.delete(0,1);
 
-//        System.out.println(s.substring(0,4));
-
+        System.out.println(builder.toString());
 
 
 
