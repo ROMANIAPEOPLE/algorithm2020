@@ -1,4 +1,4 @@
-package 코드구현력기르기;
+package ETC;
 
 import java.util.*;
 
