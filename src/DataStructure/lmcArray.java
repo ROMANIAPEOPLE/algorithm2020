@@ -15,7 +15,6 @@ public class lmcArray {
       return (a*b) / gcd(a,b);
     }
 
-
     static int solution(int [] a) {
         int lcmValue = a[0];
 
