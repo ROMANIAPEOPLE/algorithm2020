@@ -12,12 +12,18 @@ public class 연습장 {
 
     public static void main(String[] args) {
 
-        Map<String, Integer> map = new HashMap<>();
+        int n = 8;
+        int [] res = new int[n];
 
-        map.put("A",1);
-        map.put("A",2);
+        int count = 1;
+        for(int i=0; i<n; i++){
+            res[i] = count++;
+        }
 
-        System.out.println(map.get("A"));
+
+        for(int rank : res) {
+            System.out.println(rank);
+        }
 
 
     }
