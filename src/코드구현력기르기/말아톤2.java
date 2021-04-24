@@ -2,6 +2,10 @@ package 코드구현력기르기;
 
 import java.util.Scanner;
 
+/**
+ * 자신보다 낮은 노력지수가 아닌 높거나 같은 노력지수를 구하면, 그 값 + 1이 꿈 꿀수 있는 등수가 나온다.
+ */
+
 public class 말아톤2 {
     public static void main(String[] args) {
 
