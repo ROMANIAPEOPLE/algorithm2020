@@ -12,18 +12,8 @@ public class 연습장 {
 
     public static void main(String[] args) {
 
-        int n = 8;
-        int [] res = new int[n];
+        System.out.println(Math.sqrt(4));
 
-        int count = 1;
-        for(int i=0; i<n; i++){
-            res[i] = count++;
-        }
-
-
-        for(int rank : res) {
-            System.out.println(rank);
-        }
 
 
     }
