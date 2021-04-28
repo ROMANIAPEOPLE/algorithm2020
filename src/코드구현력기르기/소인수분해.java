@@ -12,7 +12,10 @@ public class 소인수분해 {
                 System.out.print(i + " ");
                 n = n/i;
             }
+        }
 
+        if(n!=1) {
+            System.out.println(n);
         }
 
 
