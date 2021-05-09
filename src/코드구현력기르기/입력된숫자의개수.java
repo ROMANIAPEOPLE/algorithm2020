@@ -16,9 +16,9 @@ public class 입력된숫자의개수 {
         int result = 0;
 
         do {
+            cur = (n / k) % 10;
             lt = n / (k * 10);
             rt = n % k;
-            cur = (n / k) % k;
 
             if (cur > value) {
                 result += (lt + 1) * k;
